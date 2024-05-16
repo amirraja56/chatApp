@@ -3,7 +3,7 @@ import './index.css';
 import { io } from 'socket.io-client'
 
 export default function App() {
-  const socket = useMemo(() => io("http://localhost:4003/"), []);
+  const socket = useMemo(() => io("https://chat-app-zeta-jet.vercel.app/"), []);
   const [message, setMessage] = useState("");
   const [userMessage, setUserMessage] = useState([]);
   const [room, setRoom] = useState("");
